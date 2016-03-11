@@ -1720,18 +1720,22 @@ typedef enum : NSUInteger {
 - (void)didPressAccessoryButton:(UIButton *)sender {
     [self dismissKeyBoard];
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NULL message:NULL preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *takeMedia = [UIAlertAction actionWithTitle:NSLocalizedString(@"TAKE_MEDIA_BUTTON", @"") style:UIAlertControllerStyleAlert handler:^(UIAlertAction * _Nonnull action) {
-        [self takePictureOrVideo];
-    }];
-    
-    UIAlertAction *chooseMedia = [UIAlertAction actionWithTitle:NSLocalizedString(@"CHOOSE_MEDIA_BUTTON", @"") style:UIAlertControllerStyleAlert handler:^(UIAlertAction * _Nonnull action) {
-        [self chooseFromLibrary];
-    }];
-    
-    [alertController addAction:takeMedia];
-    [alertController addAction:chooseMedia];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *takeMediaAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"TAKE_MEDIA_BUTTON", @"")
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+                                                          [self takePictureOrVideo];
+                                                      }];
+    [alertController addAction:takeMediaAction];
+
+    UIAlertAction *chooseMediaAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"CHOOSE_MEDIA_BUTTON", @"")
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * _Nonnull action) {
+                                                            [self chooseFromLibrary];
+                                                        }];
+    [alertController addAction:chooseMediaAction];
     
     [self presentViewController:alertController animated:true completion:nil];
     
