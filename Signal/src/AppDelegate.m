@@ -15,6 +15,8 @@
 #import "TSSocketManager.h"
 #import "TextSecureKitEnv.h"
 #import "VersionMigrations.h"
+#import "TSTestSetup.h"
+#import "TSStartingStateForTest.h"
 
 static NSString *const kStoryboardName                  = @"Storyboard";
 static NSString *const kInitialViewControllerIdentifier = @"UserInitialViewController";
@@ -33,6 +35,14 @@ static NSString *const kURLHostVerifyPrefix             = @"verify";
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSArray<NSString *> * _Nonnull launchArguments = [NSProcessInfo processInfo].arguments;
+    if ([launchArguments containsObject:TSRunTestSetup]) {
+        [TSTestSetup setupWithLaunchArguments:launchArguments];
+    }
+    return YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453EC5241CAEB06D00E49692 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EC5231CAEB06D00E49692 /* UITestCase.swift */; };
+		453EC5261CAEB54B00E49692 /* SettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EC5251CAEB54B00E49692 /* SettingsUITests.swift */; };
+		453EC5291CAEBBC100E49692 /* TSStartingStateForTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 453EC5281CAEBBC100E49692 /* TSStartingStateForTest.m */; };
+		453EC52A1CAEBBC100E49692 /* TSStartingStateForTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 453EC5281CAEBBC100E49692 /* TSStartingStateForTest.m */; };
+		45E958E71CAE4B670056EA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D221A08F169C9E5E00537ABF /* Foundation.framework */; };
+		45E958EB1CAE92840056EA15 /* RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD2DCE1C4E16DC0096B04D /* RegistrationUITests.swift */; };
+		45E958EC1CAE92840056EA15 /* MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE8FF11CAE18AD005268B7 /* MessagingUITests.swift */; };
+		45E958ED1CAE9C890056EA15 /* TSTestSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EAF8FB1CAE2C3800370241 /* TSTestSetup.m */; };
 		4B552ED26FB6FB54EDDBB7BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D124A70602BD07D5F1EE5FD8 /* libPods.a */; };
 		4CE0E3771B954546007210CF /* TSAnimatedAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0E3761B954546007210CF /* TSAnimatedAdapter.m */; };
 		701231B518ECAA4500D456C4 /* EvpMessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701231B418ECAA4500D456C4 /* EvpMessageDigest.m */; };
@@ -139,7 +147,6 @@
 		AD83FF441A73426500B5C81A /* audio_pause_button.png in Resources */ = {isa = PBXBuildFile; fileRef = AD83FF3D1A73426500B5C81A /* audio_pause_button.png */; };
 		AD83FF451A73426500B5C81A /* audio_pause_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD83FF3E1A73426500B5C81A /* audio_pause_button@2x.png */; };
 		AD83FF471A73428300B5C81A /* audio_play_button_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AD83FF461A73428300B5C81A /* audio_play_button_blue.png */; };
-		ADCD2DCF1C4E16DC0096B04D /* SignalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD2DCE1C4E16DC0096B04D /* SignalUITests.swift */; };
 		B10C9B5F1A7049EC00ECA2BF /* pause_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B10C9B5B1A7049EC00ECA2BF /* pause_icon.png */; };
 		B10C9B601A7049EC00ECA2BF /* pause_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B10C9B5C1A7049EC00ECA2BF /* pause_icon@2x.png */; };
 		B10C9B611A7049EC00ECA2BF /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B10C9B5D1A7049EC00ECA2BF /* play_icon.png */; };
@@ -495,6 +502,15 @@
 
 /* Begin PBXFileReference section */
 		14DDBCE302E19644A773D119 /* Pods.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.app store release.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.app store release.xcconfig"; sourceTree = "<group>"; };
+		453EC5231CAEB06D00E49692 /* UITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
+		453EC5251CAEB54B00E49692 /* SettingsUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUITests.swift; sourceTree = "<group>"; };
+		453EC5271CAEBBC100E49692 /* TSStartingStateForTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSStartingStateForTest.h; sourceTree = "<group>"; };
+		453EC5281CAEBBC100E49692 /* TSStartingStateForTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSStartingStateForTest.m; sourceTree = "<group>"; };
+		45E958E81CAE4B720056EA15 /* libCocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaLumberjack.a; path = "build/Signal/Build/Products/Debug-iphonesimulator/libCocoaLumberjack.a"; sourceTree = "<group>"; };
+		45EAF8F91CAE2C3800370241 /* SignalUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		45EAF8FA1CAE2C3800370241 /* TSTestSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTestSetup.h; sourceTree = "<group>"; };
+		45EAF8FB1CAE2C3800370241 /* TSTestSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestSetup.m; sourceTree = "<group>"; };
+		45EE8FF11CAE18AD005268B7 /* MessagingUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingUITests.swift; sourceTree = "<group>"; };
 		4CE0E3751B95453C007210CF /* TSAnimatedAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAnimatedAdapter.h; sourceTree = "<group>"; };
 		4CE0E3761B954546007210CF /* TSAnimatedAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAnimatedAdapter.m; sourceTree = "<group>"; };
 		701231B318ECAA4500D456C4 /* EvpMessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvpMessageDigest.h; sourceTree = "<group>"; };
@@ -737,7 +753,7 @@
 		AD83FF3E1A73426500B5C81A /* audio_pause_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio_pause_button@2x.png"; sourceTree = "<group>"; };
 		AD83FF461A73428300B5C81A /* audio_play_button_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_play_button_blue.png; sourceTree = "<group>"; };
 		ADCD2DCC1C4E16DC0096B04D /* SignalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADCD2DCE1C4E16DC0096B04D /* SignalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalUITests.swift; sourceTree = "<group>"; };
+		ADCD2DCE1C4E16DC0096B04D /* RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUITests.swift; sourceTree = "<group>"; };
 		ADCD2DD01C4E16DC0096B04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10C9B5B1A7049EC00ECA2BF /* pause_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_icon.png; sourceTree = "<group>"; };
 		B10C9B5C1A7049EC00ECA2BF /* pause_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause_icon@2x.png"; sourceTree = "<group>"; };
@@ -1030,6 +1046,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E958E71CAE4B670056EA15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,6 +1113,18 @@
 				14DDBCE302E19644A773D119 /* Pods.app store release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		45EAF8F51CAE285E00370241 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				45EAF8FA1CAE2C3800370241 /* TSTestSetup.h */,
+				45EAF8FB1CAE2C3800370241 /* TSTestSetup.m */,
+				45EAF8F91CAE2C3800370241 /* SignalUITests-Bridging-Header.h */,
+				453EC5271CAEBBC100E49692 /* TSStartingStateForTest.h */,
+				453EC5281CAEBBC100E49692 /* TSStartingStateForTest.m */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 		70B8009F190C529C0042E3F0 /* Products */ = {
@@ -1658,8 +1687,12 @@
 		ADCD2DCD1C4E16DC0096B04D /* SignalUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ADCD2DCE1C4E16DC0096B04D /* SignalUITests.swift */,
+				45EAF8F51CAE285E00370241 /* support */,
+				ADCD2DCE1C4E16DC0096B04D /* RegistrationUITests.swift */,
+				45EE8FF11CAE18AD005268B7 /* MessagingUITests.swift */,
 				ADCD2DD01C4E16DC0096B04D /* Info.plist */,
+				453EC5231CAEB06D00E49692 /* UITestCase.swift */,
+				453EC5251CAEB54B00E49692 /* SettingsUITests.swift */,
 			);
 			path = SignalUITests;
 			sourceTree = "<group>";
@@ -2003,6 +2036,7 @@
 		D221A08C169C9E5E00537ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45E958E81CAE4B720056EA15 /* libCocoaLumberjack.a */,
 				B6B226961BE4B7D200860F4D /* ContactsUI.framework */,
 				B6FE7EB61ADD62FA00A6D22F /* PushKit.framework */,
 				FC3BD9871A30A790005B96BB /* Social.framework */,
@@ -2562,7 +2596,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCD2DCF1C4E16DC0096B04D /* SignalUITests.swift in Sources */,
+				453EC52A1CAEBBC100E49692 /* TSStartingStateForTest.m in Sources */,
+				45E958EC1CAE92840056EA15 /* MessagingUITests.swift in Sources */,
+				45E958EB1CAE92840056EA15 /* RegistrationUITests.swift in Sources */,
+				453EC5261CAEB54B00E49692 /* SettingsUITests.swift in Sources */,
+				453EC5241CAEB06D00E49692 /* UITestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2583,6 +2621,7 @@
 				B6DA6B071B8A2F9A00CA6F98 /* AppStoreRating.m in Sources */,
 				76EB062418170B33006006FC /* PriorityQueue.m in Sources */,
 				B6BADBE71B88D1AC0086A80D /* LockInteractionController.m in Sources */,
+				45E958ED1CAE9C890056EA15 /* TSTestSetup.m in Sources */,
 				76EB061A18170B33006006FC /* DiscardingLog.m in Sources */,
 				76EB05AC18170B33006006FC /* SrtpSocket.m in Sources */,
 				FCB11D931A12A4AA002F93FB /* FullImageViewController.m in Sources */,
@@ -2711,6 +2750,7 @@
 				76EB054018170B33006006FC /* AppDelegate.m in Sources */,
 				76EB05D018170B33006006FC /* ZrtpHandshakeSocket.m in Sources */,
 				B63761EF19E1FBE8005735D1 /* HttpResponse.m in Sources */,
+				453EC5291CAEBBC100E49692 /* TSStartingStateForTest.m in Sources */,
 				E197B61518BBEC1A00F073E5 /* JitterQueue.m in Sources */,
 				BFB074C919A5611000F2947C /* ObservableValue.m in Sources */,
 				B68EF9BA1C0B1EBD009C3DCD /* FLAnimatedImage.m in Sources */,
@@ -3030,6 +3070,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.whispersystems.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignalUITests/SignalUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = Signal;
 			};
@@ -3072,6 +3113,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.whispersystems.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SignalUITests/SignalUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = Signal;
 				VALIDATE_PRODUCT = YES;
 			};
